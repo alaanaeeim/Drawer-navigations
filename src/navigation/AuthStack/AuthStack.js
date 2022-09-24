@@ -33,7 +33,11 @@ const AuthStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="SignInScreen" component={SignInScreen} />
-      <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+      <Stack.Screen
+        name="SignUpScreen"
+        component={SignUpScreen}
+        options={{headerBackTitleVisible: false}}
+      />
     </Stack.Navigator>
   );
 };

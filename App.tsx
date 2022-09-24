@@ -1,14 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AuthStack from './src/navigation/AuthStack/AuthStack';
+// import AuthStack from './src/navigation/AuthStack/AuthStack';
+import AppStack from './src/navigation/Drawer/AppStack';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <AuthStack />
+      {/* <AuthStack /> */}
+      <AppStack />
   </NavigationContainer>
   );
 };
